@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>conditional_js</title>
+</head>
+<body>
+    <h3 style="color: red; text-align: center;">CHECK YOUR GRADE HERE!</h3>
+    <input type="number" id="monday" oninput="bed()" style="color: green; font-size: 30px;"> 
+    <p id="grade" style="color: RED;"></p> <br>
+     
+    <script>
+
+        let mark =100;
+        function bed(){
+            let mark = document.getElementById('monday').value;
+            if (mark >= 70 && mark <= 99)  {
+            document.getElementById('grade').innerHTML="YOUR GRADE IS A"
+            //console.log('GRADE A')
+        
+        }
+
+        else if(mark >= 60 && mark <= 70){
+            document.getElementById('grade').innerHTML="YOUR GRADE IS B"
+            //console.log('GRADE B')
+        }
+
+        else if(mark >= 50 && mark <= 60){
+            document.getElementById('grade').innerHTML="YOUR GRADE IS C"
+            //console.log('GRADE C')
+        }
+        
+        else if(mark >=40 && mark <=45){
+            document.getElementById('grade').innerHTML="YOUR GRADE IS D"
+            //console.log('GRADE D')
+        }
+
+        else if(mark >=30 && mark <=35){
+            document.getElementById('grade').innerHTML="YOUR GRADE IS E"
+            //console.log('GRADE E')
+        }
+
+        else if (mark >= 20 && mark <=25){
+            document.getElementById('grade').innerHTML="YOUR GRADE IS F"
+            //console.log('GRADE F')
+        }
+
+
+        else{
+            document.getElementById('grade').innerHTML="INVALID RESULTS"
+        
+            //console.log('INVALID RESULTS.!')
+        }
+
+
+        }
+         
+        
+    </script>
+
+
+
+
+
+
+
+
+
+    
+</body>
+</html>
